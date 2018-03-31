@@ -1,0 +1,55 @@
+.posts {
+  padding: 60px 0;
+  border-bottom: 1px solid @light-base-color;
+
+  &-title {
+    margin-bottom: 40px;
+    font-size: 24px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+.post {
+  display: flex;
+  box-shadow: 0 0 7.6px 0.4px rgba(17, 20, 48, 0.11);
+
+  &-photo {
+    display: inline-block;
+    width: 50%;
+  }
+
+  &-about {
+    padding: 15px;
+    padding-right: 0;
+  }
+
+  &-section {
+    margin-bottom: 10px;
+    color: @light-base-color;
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+
+  &-title {
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+}
+
+.more-btn {
+  position: relative;
+  display: inline-block;
+  color: @text-color;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.more-btn:after {
+  position: absolute;
+  content: '\2192';
+  bottom: 2px;
+  right: -25px;
+  font-size: 20px;
+}

@@ -295,6 +295,7 @@ button:hover {
 }
 .islands {
   padding: 50px;
+  border-bottom: 1px solid #c6c6c6;
 }
 .islands-title {
   margin-bottom: 25px;
@@ -321,4 +322,77 @@ button:hover {
 }
 .islands-table tr:nth-child(2n) {
   background: #fafbfc;
+}
+.posts {
+  padding: 60px 0;
+  border-bottom: 1px solid #c6c6c6;
+}
+.posts-title {
+  margin-bottom: 40px;
+  font-size: 24px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.post {
+  display: flex;
+  box-shadow: 0 0 7.6px 0.4px rgba(17, 20, 48, 0.11);
+}
+.post-photo {
+  display: inline-block;
+  width: 50%;
+}
+.post-about {
+  padding: 15px;
+  padding-right: 0;
+}
+.post-section {
+  margin-bottom: 10px;
+  color: #c6c6c6;
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.post-title {
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+.more-btn {
+  position: relative;
+  display: inline-block;
+  color: #565656;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.more-btn:after {
+  position: absolute;
+  content: '\2192';
+  bottom: 2px;
+  right: -25px;
+  font-size: 20px;
+}
+.footer {
+  padding: 40px 0 10px 0;
+}
+.footer .nav-item a {
+  line-height: 40px;
+}
+.links {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 35px;
+}
+.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px;
+  width: 40px;
+  height: 40px;
+  color: #565656;
+  border-radius: 50%;
+  border: 1px solid #c6c6c6;
+}
+.coppyright {
+  color: #c6c6c6;
+  text-align: right;
 }
