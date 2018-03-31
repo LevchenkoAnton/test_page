@@ -1,0 +1,58 @@
+.contact {
+
+  &-popup-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background: rgba(255, 255, 255, .9);
+  }
+
+  &-popup {
+    display: flex;
+  }
+
+  &-popup-img {
+    background: url("../img/contact-popup-img.jpg") no-repeat center center;
+  }
+
+  &-about {
+    position: relative;
+    padding: 60px;
+    background: @base-bg;
+    box-shadow: 0 0 7.6px 0.4px rgba(17, 20, 48, 0.11);
+  }
+
+  &-title {
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  &-input,
+  &-massage {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 1px solid @light-base-color;
+    background: @base-bg;
+  }
+
+  &-btn {
+    display: inline-block;
+    padding: 12px 45px;
+    font-size: 16px;
+    text-transform: uppercase;
+    border-radius: 30px;
+    border: none;
+    background: @btn-bg;
+  }
+}
+
+.open-popup {
+  display: flex;
+}

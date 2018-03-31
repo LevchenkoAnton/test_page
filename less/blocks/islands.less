@@ -1,0 +1,35 @@
+.islands {
+  padding: 50px;
+
+  &-title {
+    margin-bottom: 25px;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+
+  &-description {
+    font-weight: 300;
+    margin-bottom: 30px;
+  }
+
+  &-table {
+    margin-bottom: 40px;
+    width: 100%;
+    border: 1px solid @light-base-color;
+
+    th {
+      padding: 20px 10px;
+      color: @table-color;
+      font-weight: 400;
+      border-bottom: 1px solid @light-base-color;
+    }
+
+    td {
+      padding: 15px 10px;
+    }
+
+    tr:nth-child(2n) {
+      background: @table-bg;
+    }
+  }
+}

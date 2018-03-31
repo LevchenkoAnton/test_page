@@ -1,0 +1,41 @@
+.comment {
+  padding: 40px 0;
+  border-top: 1px solid @light-base-color;
+  border-bottom: 1px solid @light-base-color;
+
+  &-text {
+    position: relative;
+    padding-left: 70px;
+    font-size: 16px;
+    font-style: italic;
+  }
+
+  &-text:before {
+    position: absolute;
+    content: '\201c';
+    top: 10px;
+    left: 0;
+    display: block;
+    width: 60px;
+    height: 60px;
+    font-size: 60px;
+    color: @logo-color;
+  }
+
+  &-author {
+    position: relative;
+    display: inline-block;
+    float: right;
+  }
+
+  &-author:before {
+    position: absolute;
+    content: '';
+    display: block;
+    top: 10px;
+    left: -50px;
+    width: 40px;
+    height: 1px;
+    background: @light-base-color;
+  }
+}
