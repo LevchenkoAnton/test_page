@@ -2,6 +2,7 @@
 
   &-popup {
     position: absolute;
+    z-index: 2;
     top: 0;
     display: none;
     align-items: center;
@@ -66,5 +67,15 @@
 
   &-close:before {
     transform: rotateZ(-45deg);
+  }
+}
+
+@media (max-width: 576px) {
+  .search-input {
+    font-size: 20px;
+
+    &-icon {
+      top: 15px;
+    }
   }
 }

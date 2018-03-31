@@ -3,6 +3,7 @@
 
   &-text {
     position: relative;
+    display: inline-block;
     padding-left: 40px;
     margin: 0;
     font-weight: bold;
@@ -20,5 +21,14 @@
     height: 30px;
     border-radius: 50%;
     border: 6px solid @logo-color;
+  }
+}
+
+@media (max-width: 991px) {
+
+  .logo {
+    padding-top: 25px;
+    padding-bottom: 10px;
+    text-align: center;
   }
 }

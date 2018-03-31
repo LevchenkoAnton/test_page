@@ -29,6 +29,9 @@ button:hover {
 .header {
   position: relative;
 }
+.header .nav .open-nav {
+  display: block;
+}
 .nav-list {
   display: flex;
   width: 100%;
@@ -40,6 +43,7 @@ button:hover {
   display: inline-block;
   vertical-align: middle;
   flex-grow: 1;
+  padding: 0 5px;
   text-align: center;
 }
 .nav-item a {
@@ -82,18 +86,72 @@ button:hover {
   line-height: 14px;
 }
 .search-bnt {
-  display: block;
-  width: 25px;
-  height: 25px;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
   font-size: 25px;
   border: none;
   background: none;
+}
+.open-nav-btn {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  display: none;
+  width: 50px;
+  height: 50px;
+  border: none;
+  background-color: transparent;
+}
+.open-nav-btn:before {
+  position: absolute;
+  content: '';
+  right: 10px;
+  top: 17px;
+  width: 23px;
+  height: 4px;
+  background: #565656;
+  box-shadow: 0 4px 0 transparent, 0 8px 0 #565656, 0 12px 0 transparent, 0 16px 0 #565656;
+}
+@media (max-width: 668px) {
+  .header .nav {
+    position: relative;
+  }
+  .header .nav-list {
+    position: absolute;
+    display: none;
+    z-index: 1;
+    flex-direction: column;
+    background: #fff;
+  }
+  .header .nav-item {
+    width: 100%;
+    border: 1px solid #c6c6c6;
+    border-top: 1px solid #ececec;
+  }
+  .header .nav-item a {
+    line-height: 40px;
+  }
+  .header .submenu {
+    position: relative;
+  }
+  .header .submenu-item {
+    padding: 0 10px;
+  }
+  .header .search-bnt {
+    width: 50px;
+    height: 50px;
+  }
+  .header .open-nav-btn {
+    display: block;
+  }
 }
 .logo {
   padding: 34px 0;
 }
 .logo-text {
   position: relative;
+  display: inline-block;
   padding-left: 40px;
   margin: 0;
   font-weight: bold;
@@ -110,6 +168,13 @@ button:hover {
   height: 30px;
   border-radius: 50%;
   border: 6px solid #ffd942;
+}
+@media (max-width: 991px) {
+  .logo {
+    padding-top: 25px;
+    padding-bottom: 10px;
+    text-align: center;
+  }
 }
 .main {
   color: #fefefe;
@@ -128,8 +193,19 @@ button:hover {
 .main-title {
   font-size: 72px;
 }
+@media (max-width: 768px) {
+  .main-title {
+    font-size: 50px;
+  }
+}
+@media (max-width: 576px) {
+  .main-title {
+    font-size: 30px;
+  }
+}
 .search-popup {
   position: absolute;
+  z-index: 2;
   top: 0;
   display: none;
   align-items: center;
@@ -187,8 +263,17 @@ button:hover {
 .popup-close:before {
   transform: rotateZ(-45deg);
 }
+@media (max-width: 576px) {
+  .search-input {
+    font-size: 20px;
+  }
+  .search-input-icon {
+    top: 15px;
+  }
+}
 .contact-popup-wrapper {
   position: absolute;
+  z-index: 2;
   top: 0;
   left: 0;
   display: none;
@@ -234,6 +319,19 @@ button:hover {
 }
 .open-popup {
   display: flex;
+}
+@media (max-width: 768px) {
+  .contact-title {
+    font-size: 18px;
+  }
+}
+@media (max-width: 576px) {
+  .contact-popup-wrapper {
+    padding: 20px;
+  }
+  .contact-popup-img {
+    display: none;
+  }
 }
 .about {
   padding-top: 50px;
@@ -294,7 +392,7 @@ button:hover {
   background: #c6c6c6;
 }
 .islands {
-  padding: 50px;
+  padding: 50px 0;
   border-bottom: 1px solid #c6c6c6;
 }
 .islands-title {
@@ -322,6 +420,13 @@ button:hover {
 }
 .islands-table tr:nth-child(2n) {
   background: #fafbfc;
+}
+@media (max-width: 576px) {
+  .islands-table th,
+  .islands-table td {
+    padding: 5px;
+    font-size: 10px;
+  }
 }
 .posts {
   padding: 60px 0;
@@ -370,6 +475,14 @@ button:hover {
   right: -25px;
   font-size: 20px;
 }
+@media (max-width: 997px) {
+  .posts-title {
+    font-size: 20px;
+  }
+  .post {
+    margin-bottom: 20px;
+  }
+}
 .footer {
   padding: 40px 0 10px 0;
 }
@@ -395,4 +508,23 @@ button:hover {
 .coppyright {
   color: #c6c6c6;
   text-align: right;
+}
+@media (max-width: 997px) {
+  .footer .nav {
+    margin-bottom: 20px;
+  }
+  .footer .nav-item a {
+    line-height: 25px;
+  }
+  .links {
+    justify-content: center;
+  }
+  .coppyright {
+    text-align: center;
+  }
+}
+@media (max-width: 576px) {
+  .footer .nav-list {
+    flex-wrap: wrap;
+  }
 }

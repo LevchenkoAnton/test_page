@@ -28,3 +28,33 @@
   color: @light-base-color;
   text-align: right;
 }
+
+@media (max-width: 997px) {
+  .footer {
+
+    .nav {
+      margin-bottom: 20px;
+    }
+
+    .nav-item a {
+      line-height: 25px;
+    }
+  }
+
+  .links {
+    justify-content: center;
+  }
+
+  .coppyright {
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer {
+
+    .nav-list {
+      flex-wrap: wrap;
+    }
+  }
+}
