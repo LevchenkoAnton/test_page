@@ -5,6 +5,9 @@
   * CSS3;
   * jQuery;
   * Bootstrap;
-  * Slick;
-  * BEM;
   * Препроцессор LESS.
+  
+Время затраченное на выполнение задания составило три дня (20 часов)
+
+Ссылка на проект:
+https://levchenkoanton.github.io/test_page/
