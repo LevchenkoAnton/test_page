@@ -51,6 +51,7 @@
 .submenu {
   position: absolute;
   left: 0;
+  z-index: 1;
   display: none;
   width: 100%;
   border-top: 1px solid @logo-color;
@@ -99,6 +100,13 @@
   0 8px 0 @text-color,
   0 12px 0 transparent,
   0 16px 0 @text-color;
+}
+
+@media (max-width: 1200px) {
+  .submenu-item {
+    padding: 6px;
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 668px) {

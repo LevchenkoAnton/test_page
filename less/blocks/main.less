@@ -4,6 +4,11 @@
   text-transform: uppercase;
   background: url("../img/main-bg.jpg") no-repeat center center;
   background-size: cover;
+  animation-name: main-anim;
+  animation-duration: 5.0s;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  animation-fill-mode: forwards;
 
   .row {
     min-height: 370px;
@@ -16,6 +21,21 @@
 
   &-title {
     font-size: 72px;
+  }
+}
+
+@keyframes main-anim {
+  0% {
+    opacity:0;
+  }
+  10% {
+    opacity:1;
+  }
+  90% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
   }
 }
 

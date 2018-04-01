@@ -56,6 +56,38 @@
 
 .open-popup {
   display: flex;
+  animation-name: fade;
+  animation-duration: .4s;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.error-form {
+    animation-name: error;
+    animation-duration: .4s;
+
+}
+
+@keyframes error {
+  0% {
+    left: 10px;
+  }
+  30% {
+    left: -10px;
+  }
+  60% {
+    left: 10px;
+  }
+  100% {
+    left: 0px;
+  }
 }
 
 @media (max-width: 768px) {

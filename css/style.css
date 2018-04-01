@@ -1,13 +1,13 @@
 /* fonts files */
 .base-text {
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Work Sans', Arial, sans-serif;
   font-weight: 400;
 }
 /*colors*/
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Work Sans', Arial, sans-serif;
   font-weight: 400;
   line-height: 21px;
   box-sizing: border-box;
@@ -73,6 +73,7 @@ button:hover {
 .submenu {
   position: absolute;
   left: 0;
+  z-index: 1;
   display: none;
   width: 100%;
   border-top: 1px solid #ffd942;
@@ -112,6 +113,12 @@ button:hover {
   height: 4px;
   background: #565656;
   box-shadow: 0 4px 0 transparent, 0 8px 0 #565656, 0 12px 0 transparent, 0 16px 0 #565656;
+}
+@media (max-width: 1200px) {
+  .submenu-item {
+    padding: 6px;
+    font-size: 12px;
+  }
 }
 @media (max-width: 668px) {
   .header .nav {
@@ -182,6 +189,11 @@ button:hover {
   text-transform: uppercase;
   background: url("../img/main-bg.jpg") no-repeat center center;
   background-size: cover;
+  animation-name: main-anim;
+  animation-duration: 5.0s;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  animation-fill-mode: forwards;
 }
 .main .row {
   min-height: 370px;
@@ -192,6 +204,20 @@ button:hover {
 }
 .main-title {
   font-size: 72px;
+}
+@keyframes main-anim {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 @media (max-width: 768px) {
   .main-title {
@@ -319,6 +345,34 @@ button:hover {
 }
 .open-popup {
   display: flex;
+  animation-name: fade;
+  animation-duration: .4s;
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.error-form {
+  animation-name: error;
+  animation-duration: .4s;
+}
+@keyframes error {
+  0% {
+    left: 10px;
+  }
+  30% {
+    left: -10px;
+  }
+  60% {
+    left: 10px;
+  }
+  100% {
+    left: 0px;
+  }
 }
 @media (max-width: 768px) {
   .contact-title {
